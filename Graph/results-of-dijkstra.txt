@@ -1,0 +1,48 @@
+
+These are the logs for compare.py.
+Mu is the shortest st-distance we have calculated for an undirected, weighted, clique of size test.
+
+
+for regular dijk, test = 5, mu is 13, query is 45, and it took 0.0 seconds
+for improved dijk, test = 5, mu is 13, query is 10, and it took 0.0 seconds
+for bidirectional dijk, test = 5 mu is 13, query is 15, and it took 0.0 seconds
+
+
+for regular dijk, test = 10, mu is 34, query is 180, and it took 0.014 seconds
+for improved dijk, test = 10, mu is 34, query is 40, and it took 0.0 seconds
+for bidirectional dijk, test = 10 mu is 34, query is 40, and it took 0.0 seconds
+
+
+for regular dijk, test = 25, mu is 44, query is 1475, and it took 0.001 seconds
+for improved dijk, test = 25, mu is 44, query is 500, and it took 0.0 seconds
+for bidirectional dijk, test = 25 mu is 44, query is 225, and it took 0.0 seconds
+
+
+for regular dijk, test = 50, mu is 23, query is 5900, and it took 0.01 seconds
+for improved dijk, test = 50, mu is 23, query is 700, and it took 0.001 seconds
+for bidirectional dijk, test = 50 mu is 23, query is 200, and it took 0.0 seconds
+
+
+for regular dijk, test = 100, mu is 32, query is 29500, and it took 0.083 seconds
+for improved dijk, test = 100, mu is 32, query is 8800, and it took 0.019 seconds
+for bidirectional dijk, test = 100 mu is 32, query is 1500, and it took 0.015 seconds
+
+
+for regular dijk, test = 250, mu is 27, query is 186750, and it took 1.202 seconds
+for improved dijk, test = 250, mu is 27, query is 59000, and it took 0.356 seconds
+for bidirectional dijk, test = 250 mu is 27, query is 5500, and it took 0.049 seconds
+
+
+for regular dijk, test = 500, mu is 19, query is 781000, and it took 9.704 seconds
+for improved dijk, test = 500, mu is 19, query is 25500, and it took 0.343 seconds
+for bidirectional dijk, test = 500 mu is 19, query is 2000, and it took 0.039 seconds
+
+
+for regular dijk, test = 1000, mu is 23, query is 3504000, and it took 86.69 seconds
+for improved dijk, test = 1000, mu is 23, query is 762000, and it took 19.781 seconds
+for bidirectional dijk, test = 1000 mu is 23, query is 30000, and it took 0.808 seconds
+
+
+for regular dijk, test = 2500, mu is 22, query is 23952500, and it took 1938.721 seconds
+for improved dijk, test = 2500, mu is 22, query is 6015000, and it took 493.407 seconds
+for bidirectional dijk, test = 2500 mu is 22, query is 120000, and it took 10.605 seconds
