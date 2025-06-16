@@ -44,19 +44,19 @@ def compare(tests, undirected):
         start = time.time()
         dijk_query, dijk_mu = dijkstra.dijkstra(r_graph, s, t)
         end = time.time()
-        print(f"for regular dijk, test = {test}, mu is {dijk_mu}, query is {dijk_query}, and it took {round(end-start, 3)} second")
+        print(f"for regular dijk, test = {test}, mu is {dijk_mu}, query is {dijk_query}, and it took {round(end-start, 3)} seconds")
 
 
         start = time.time()
         improved_dijk_query, improved_dijk_mu = improved.dijkstra(r_graph, s, t)
         end = time.time()
-        print(f"for improved dijk, test = {test}, mu is {improved_dijk_mu}, query is {improved_dijk_query}, and it took {round(end-start, 3)} second")
+        print(f"for improved dijk, test = {test}, mu is {improved_dijk_mu}, query is {improved_dijk_query}, and it took {round(end-start, 3)} seconds")
 
 
         start = time.time()
         mu, e_mid, fwd_run, bwd_run, query = bidirectional_dijkstra.bidirectional(r_graph, s, t, undirected)
         end = time.time()
-        print(f"for bidirectional dijk, test = {test} mu is {mu}, query is {query}, and it took {round(end-start, 3)} second")
+        print(f"for bidirectional dijk, test = {test} mu is {mu}, query is {query}, and it took {round(end-start, 3)} seconds")
         print("\n")
 
 if __name__ == "__main__":
