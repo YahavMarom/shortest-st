@@ -2,7 +2,7 @@
 
 ## Description
 I read an article that explained the bidirectional approach of computing the shortest s-t path in graphs.
-In it, they described a version of bidirectional Dijkstra/BFS that was supposed to be optimal, up to any graph, when we don't have prior knowledge of it.
+In it, they described a version of bidirectional Dijkstra/BFS that was supposed to be optimal in terms of query complexity, up to any graph, when we don't have prior knowledge of it.
 
 ## Why?
 The intuition is that Dijkstra/BFS grows in "circles", and by so, when searching for the shortest path between vertices s and t, we compute more than we need for just the shortest path: we grow one large "circle" from s. However, we can grow two smaller circles around s and t and terminate when a stopping condition is met.
