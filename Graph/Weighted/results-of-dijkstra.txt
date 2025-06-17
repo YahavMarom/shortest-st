@@ -1,122 +1,503 @@
-write the lists of dijk, improv, bd_dijk for the text:
+
 
 These are the logs for compare.py.
 Mu is the shortest st-distance we have calculated for an undirected, weighted, clique of size test.
 
-
-for regular dijk, test = 5, mu is 13, query is 45, and it took 0.0 seconds
-for improved dijk, test = 5, mu is 13, query is 10, and it took 0.0 seconds
-for bidirectional dijk, test = 5 mu is 13, query is 15, and it took 0.0 seconds
-
-
-for regular dijk, test = 10, mu is 34, query is 180, and it took 0.014 seconds
-for improved dijk, test = 10, mu is 34, query is 40, and it took 0.0 seconds
-for bidirectional dijk, test = 10 mu is 34, query is 40, and it took 0.0 seconds
+for regular dijk, test = 50, mu is 116, query is 2500, and it took 0.002 seconds
+for improved dijk, test = 50, mu is 116, query is 1350, and it took 0.0 seconds
+for bidirectional dijk, test = 50 mu is 116, query is 600, and it took 0.0 seconds
 
 
-for regular dijk, test = 25, mu is 44, query is 1475, and it took 0.001 seconds
-for improved dijk, test = 25, mu is 44, query is 500, and it took 0.0 seconds
-for bidirectional dijk, test = 25 mu is 44, query is 225, and it took 0.0 seconds
+for regular dijk, test = 100, mu is 58, query is 10000, and it took 0.006 seconds
+for improved dijk, test = 100, mu is 58, query is 1200, and it took 0.002 seconds
+for bidirectional dijk, test = 100 mu is 58, query is 700, and it took 0.005 seconds
 
 
-for regular dijk, test = 35, mu is 60, query is 3815, and it took 0.016 seconds
-for improved dijk, test = 35, mu is 60, query is 805, and it took 0.0 seconds
-for bidirectional dijk, test = 35 mu is 60, query is 210, and it took 0.0 seconds
+for regular dijk, test = 150, mu is 60, query is 22500, and it took 0.016 seconds
+for improved dijk, test = 150, mu is 60, query is 4350, and it took 0.004 seconds
+for bidirectional dijk, test = 150 mu is 60, query is 1350, and it took 0.016 seconds
 
 
-for regular dijk, test = 50, mu is 23, query is 5900, and it took 0.01 seconds
-for improved dijk, test = 50, mu is 23, query is 700, and it took 0.001 seconds
-for bidirectional dijk, test = 50 mu is 23, query is 200, and it took 0.0 seconds
+for regular dijk, test = 200, mu is 81, query is 40000, and it took 0.045 seconds
+for improved dijk, test = 200, mu is 81, query is 25400, and it took 0.036 seconds
+for bidirectional dijk, test = 200 mu is 81, query is 4600, and it took 0.016 seconds
 
 
-for regular dijk, test = 60, mu is 57, query is 12480, and it took 0.068 seconds
-for improved dijk, test = 60, mu is 57, query is 900, and it took 0.004 seconds
-for bidirectional dijk, test = 60 mu is 57, query is 660, and it took 0.002 seconds
+for regular dijk, test = 250, mu is 50, query is 62500, and it took 0.03 seconds
+for improved dijk, test = 250, mu is 50, query is 23500, and it took 0.027 seconds
+for bidirectional dijk, test = 250 mu is 50, query is 5250, and it took 0.029 seconds
 
 
-for regular dijk, test = 75, mu is 51, query is 20700, and it took 0.071 seconds
-for improved dijk, test = 75, mu is 51, query is 8250, and it took 0.019 seconds
-for bidirectional dijk, test = 75 mu is 51, query is 1500, and it took 0.005 seconds
+for regular dijk, test = 300, mu is 43, query is 90000, and it took 0.043 seconds
+for improved dijk, test = 300, mu is 43, query is 11700, and it took 0.04 seconds
+for bidirectional dijk, test = 300 mu is 43, query is 3900, and it took 0.043 seconds
 
 
-for regular dijk, test = 100, mu is 32, query is 29500, and it took 0.083 seconds
-for improved dijk, test = 100, mu is 32, query is 8800, and it took 0.019 seconds
-for bidirectional dijk, test = 100 mu is 32, query is 1500, and it took 0.015 seconds
-
-for regular dijk, test = 125, mu is 40, query is 65750, and it took 0.244 seconds
-for improved dijk, test = 125, mu is 40, query is 20125, and it took 0.072 seconds
-for bidirectional dijk, test = 125 mu is 40, query is 1875, and it took 0.0 seconds
+for regular dijk, test = 350, mu is 37, query is 122500, and it took 0.064 seconds
+for improved dijk, test = 350, mu is 37, query is 5950, and it took 0.033 seconds
+for bidirectional dijk, test = 350 mu is 37, query is 3150, and it took 0.048 seconds
 
 
-for regular dijk, test = 150, mu is 19, query is 99900, and it took 0.416 seconds
-for improved dijk, test = 150, mu is 19, query is 6450, and it took 0.044 seconds
-for bidirectional dijk, test = 150 mu is 19, query is 1950, and it took 0.011 seconds
+for regular dijk, test = 400, mu is 52, query is 160000, and it took 0.095 seconds
+for improved dijk, test = 400, mu is 52, query is 76000, and it took 0.069 seconds
+for bidirectional dijk, test = 400 mu is 52, query is 11600, and it took 0.067 seconds
 
 
-for regular dijk, test = 200, mu is 13, query is 179400, and it took 0.945 seconds
-for improved dijk, test = 200, mu is 13, query is 17400, and it took 0.118 seconds
-for bidirectional dijk, test = 200 mu is 13, query is 4000, and it took 0.032 seconds
+for regular dijk, test = 450, mu is 59, query is 202500, and it took 0.131 seconds
+for improved dijk, test = 450, mu is 59, query is 143100, and it took 0.086 seconds
+for bidirectional dijk, test = 450 mu is 59, query is 16650, and it took 0.084 seconds
 
 
-for regular dijk, test = 250, mu is 27, query is 186750, and it took 1.202 seconds
-for improved dijk, test = 250, mu is 27, query is 59000, and it took 0.356 seconds
-for bidirectional dijk, test = 250 mu is 27, query is 5500, and it took 0.049 seconds
+for regular dijk, test = 500, mu is 58, query is 250000, and it took 0.143 seconds
+for improved dijk, test = 500, mu is 58, query is 193000, and it took 0.123 seconds
+for bidirectional dijk, test = 500 mu is 58, query is 14000, and it took 0.117 seconds
 
 
-for regular dijk, test = 350, mu is 14, query is 625450, and it took 5.413 seconds
-for improved dijk, test = 350, mu is 14, query is 72450, and it took 0.659 seconds
-for bidirectional dijk, test = 350 mu is 14, query is 8750, and it took 0.087 seconds
+for regular dijk, test = 550, mu is 41, query is 302500, and it took 0.202 seconds
+for improved dijk, test = 550, mu is 41, query is 125400, and it took 0.102 seconds
+for bidirectional dijk, test = 550 mu is 41, query is 9900, and it took 0.145 seconds
 
 
-for regular dijk, test = 425, mu is 6, query is 959650, and it took 10.847 seconds
-for improved dijk, test = 425, mu is 6, query is 32725, and it took 0.365 seconds
-for bidirectional dijk, test = 425 mu is 6, query is 6800, and it took 0.105 seconds
+for regular dijk, test = 600, mu is 43, query is 360000, and it took 0.209 seconds
+for improved dijk, test = 600, mu is 43, query is 124800, and it took 0.175 seconds
+for bidirectional dijk, test = 600 mu is 43, query is 11400, and it took 0.186 seconds
 
 
-for regular dijk, test = 500, mu is 19, query is 781000, and it took 9.704 seconds
-for improved dijk, test = 500, mu is 19, query is 25500, and it took 0.343 seconds
-for bidirectional dijk, test = 500 mu is 19, query is 2000, and it took 0.039 seconds
+for regular dijk, test = 650, mu is 45, query is 422500, and it took 0.301 seconds
+for improved dijk, test = 650, mu is 45, query is 242450, and it took 0.218 seconds
+for bidirectional dijk, test = 650 mu is 45, query is 16900, and it took 0.291 seconds
 
 
-for regular dijk, test = 575, mu is 6, query is 1827350, and it took 28.307 seconds
-for improved dijk, test = 575, mu is 6, query is 102350, and it took 1.502 seconds
-for bidirectional dijk, test = 575 mu is 6, query is 16100, and it took 0.292 seconds
+for regular dijk, test = 700, mu is 43, query is 490000, and it took 0.339 seconds
+for improved dijk, test = 700, mu is 43, query is 199500, and it took 0.213 seconds
+for bidirectional dijk, test = 700 mu is 43, query is 15400, and it took 0.339 seconds
 
 
-for regular dijk, test = 650, mu is 8, query is 2377050, and it took 42.35 seconds
-for improved dijk, test = 650, mu is 8, query is 203450, and it took 3.898 seconds
-for bidirectional dijk, test = 650 mu is 8, query is 13000, and it took 0.541 seconds
+for regular dijk, test = 750, mu is 26, query is 562500, and it took 0.404 seconds
+for improved dijk, test = 750, mu is 26, query is 24000, and it took 0.15 seconds
+for bidirectional dijk, test = 750 mu is 26, query is 8250, and it took 0.302 seconds
 
 
-for regular dijk, test = 750, mu is 8, query is 3087750, and it took 62.75 seconds
-for improved dijk, test = 750, mu is 8, query is 522750, and it took 11.978 seconds
-for bidirectional dijk, test = 750 mu is 8, query is 26250, and it took 0.53 seconds
+for regular dijk, test = 800, mu is 42, query is 640000, and it took 0.449 seconds
+for improved dijk, test = 800, mu is 42, query is 328000, and it took 0.294 seconds
+for bidirectional dijk, test = 800 mu is 42, query is 20800, and it took 0.329 seconds
 
 
-for regular dijk, test = 875, mu is 4, query is 4337375, and it took 129.372 seconds
-for improved dijk, test = 875, mu is 4, query is 70000, and it took 1.904 seconds
-for bidirectional dijk, test = 875 mu is 4, query is 10500, and it took 0.361 seconds
+for regular dijk, test = 850, mu is 47, query is 722500, and it took 0.836 seconds
+for improved dijk, test = 850, mu is 47, query is 372300, and it took 0.342 seconds
+for bidirectional dijk, test = 850 mu is 47, query is 28900, and it took 0.467 seconds
 
 
-for regular dijk, test = 1000, mu is 23, query is 3504000, and it took 86.69 seconds
-for improved dijk, test = 1000, mu is 23, query is 762000, and it took 19.781 seconds
-for bidirectional dijk, test = 1000 mu is 23, query is 30000, and it took 0.808 seconds
-
-for regular dijk, test = 1150, mu is 7, query is 7780900, and it took 344.842 seconds
-for improved dijk, test = 1150, mu is 7, query is 1000500, and it took 48.362 seconds
-for bidirectional dijk, test = 1150 mu is 7, query is 31050, and it took 2.096 seconds
+for regular dijk, test = 900, mu is 39, query is 810000, and it took 0.617 seconds
+for improved dijk, test = 900, mu is 39, query is 356400, and it took 0.342 seconds
+for bidirectional dijk, test = 900 mu is 39, query is 20700, and it took 0.408 seconds
 
 
-for regular dijk, test = 1300, mu is 6, query is 9964500, and it took 1520.363 seconds
-for improved dijk, test = 1300, mu is 6, query is 1448200, and it took 71.346 seconds
-for bidirectional dijk, test = 1300 mu is 6, query is 48100, and it took 2.292 seconds
+for regular dijk, test = 950, mu is 45, query is 902500, and it took 0.687 seconds
+for improved dijk, test = 950, mu is 45, query is 593750, and it took 0.6 seconds
+for bidirectional dijk, test = 950 mu is 45, query is 35150, and it took 0.513 seconds
 
 
-for regular dijk, test = 1500, mu is 6, query is 13161000, and it took 712.333 seconds
-for improved dijk, test = 1500, mu is 6, query is 2539500, and it took 129.218 seconds
-for bidirectional dijk, test = 1500 mu is 6, query is 94500, and it took 4.854 seconds
+for regular dijk, test = 1000, mu is 43, query is 1000000, and it took 0.651 seconds
+for improved dijk, test = 1000, mu is 43, query is 603000, and it took 0.5 seconds
+for bidirectional dijk, test = 1000 mu is 43, query is 32000, and it took 0.55 seconds
 
 
-for regular dijk, test = 2500, mu is 22, query is 23952500, and it took 1938.721 seconds
-for improved dijk, test = 2500, mu is 22, query is 6015000, and it took 493.407 seconds
-for bidirectional dijk, test = 2500 mu is 22, query is 120000, and it took 10.605 seconds
+for regular dijk, test = 1050, mu is 42, query is 1102500, and it took 0.755 seconds
+for improved dijk, test = 1050, mu is 42, query is 316050, and it took 0.419 seconds
+for bidirectional dijk, test = 1050 mu is 42, query is 18900, and it took 0.593 seconds
+
+
+for regular dijk, test = 1100, mu is 32, query is 1210000, and it took 0.777 seconds
+for improved dijk, test = 1100, mu is 32, query is 162800, and it took 0.365 seconds
+for bidirectional dijk, test = 1100 mu is 32, query is 18700, and it took 0.591 seconds
+
+
+for regular dijk, test = 1150, mu is 42, query is 1322500, and it took 0.898 seconds
+for improved dijk, test = 1150, mu is 42, query is 837200, and it took 1.182 seconds
+for bidirectional dijk, test = 1150 mu is 42, query is 41400, and it took 0.735 seconds
+
+
+for regular dijk, test = 1200, mu is 45, query is 1440000, and it took 0.936 seconds
+for improved dijk, test = 1200, mu is 45, query is 1170000, and it took 0.883 seconds
+for bidirectional dijk, test = 1200 mu is 45, query is 51600, and it took 0.798 seconds
+
+
+for regular dijk, test = 1250, mu is 41, query is 1562500, and it took 1.031 seconds
+for improved dijk, test = 1250, mu is 41, query is 873750, and it took 0.764 seconds
+for bidirectional dijk, test = 1250 mu is 41, query is 37500, and it took 0.879 seconds
+
+
+for regular dijk, test = 1300, mu is 42, query is 1690000, and it took 1.052 seconds
+for improved dijk, test = 1300, mu is 42, query is 950300, and it took 0.762 seconds
+for bidirectional dijk, test = 1300 mu is 42, query is 41600, and it took 0.883 seconds
+
+
+for regular dijk, test = 1350, mu is 42, query is 1822500, and it took 1.145 seconds
+for improved dijk, test = 1350, mu is 42, query is 1156950, and it took 0.874 seconds
+for bidirectional dijk, test = 1350 mu is 42, query is 49950, and it took 0.941 seconds
+
+
+for regular dijk, test = 1400, mu is 42, query is 1960000, and it took 1.246 seconds
+for improved dijk, test = 1400, mu is 42, query is 1156400, and it took 1.078 seconds
+for bidirectional dijk, test = 1400 mu is 42, query is 44800, and it took 1.167 seconds
+
+
+for regular dijk, test = 1450, mu is 40, query is 2102500, and it took 1.35 seconds
+for improved dijk, test = 1450, mu is 40, query is 1431150, and it took 1.053 seconds
+for bidirectional dijk, test = 1450 mu is 40, query is 40600, and it took 1.164 seconds
+
+
+for regular dijk, test = 1500, mu is 31, query is 2250000, and it took 1.483 seconds
+for improved dijk, test = 1500, mu is 31, query is 237000, and it took 0.698 seconds
+for bidirectional dijk, test = 1500 mu is 31, query is 30000, and it took 1.209 seconds
+
+
+for regular dijk, test = 1550, mu is 37, query is 2402500, and it took 1.493 seconds
+for improved dijk, test = 1550, mu is 37, query is 919150, and it took 1.049 seconds
+for bidirectional dijk, test = 1550 mu is 37, query is 41850, and it took 1.357 seconds
+
+
+for regular dijk, test = 1600, mu is 28, query is 2560000, and it took 1.834 seconds
+for improved dijk, test = 1600, mu is 28, query is 262400, and it took 0.799 seconds
+for bidirectional dijk, test = 1600 mu is 28, query is 28800, and it took 1.496 seconds
+
+
+for regular dijk, test = 1650, mu is 26, query is 2722500, and it took 1.712 seconds
+for improved dijk, test = 1650, mu is 26, query is 151800, and it took 0.753 seconds
+for bidirectional dijk, test = 1650 mu is 26, query is 16500, and it took 1.593 seconds
+
+
+for regular dijk, test = 1700, mu is 46, query is 2890000, and it took 1.822 seconds
+for improved dijk, test = 1700, mu is 46, query is 2737000, and it took 1.741 seconds
+for bidirectional dijk, test = 1700 mu is 46, query is 61200, and it took 1.617 seconds
+
+
+for regular dijk, test = 1750, mu is 33, query is 3062500, and it took 1.906 seconds
+for improved dijk, test = 1750, mu is 33, query is 799750, and it took 1.067 seconds
+for bidirectional dijk, test = 1750 mu is 33, query is 45500, and it took 1.749 seconds
+
+
+for regular dijk, test = 1800, mu is 39, query is 3240000, and it took 2.148 seconds
+for improved dijk, test = 1800, mu is 39, query is 1522800, and it took 1.403 seconds
+for bidirectional dijk, test = 1800 mu is 39, query is 54000, and it took 1.931 seconds
+
+
+for regular dijk, test = 1850, mu is 24, query is 3422500, and it took 2.321 seconds
+for improved dijk, test = 1850, mu is 24, query is 122100, and it took 0.899 seconds
+for bidirectional dijk, test = 1850 mu is 24, query is 24050, and it took 1.832 seconds
+
+
+for regular dijk, test = 1900, mu is 40, query is 3610000, and it took 2.325 seconds
+for improved dijk, test = 1900, mu is 40, query is 2354100, and it took 1.803 seconds
+for bidirectional dijk, test = 1900 mu is 40, query is 70300, and it took 2.085 seconds
+
+
+for regular dijk, test = 1950, mu is 38, query is 3802500, and it took 4.922 seconds
+for improved dijk, test = 1950, mu is 38, query is 2166450, and it took 2.097 seconds
+for bidirectional dijk, test = 1950 mu is 38, query is 76050, and it took 2.346 seconds
+
+
+for regular dijk, test = 2000, mu is 39, query is 4000000, and it took 2.654 seconds
+for improved dijk, test = 2000, mu is 39, query is 2814000, and it took 2.224 seconds
+for bidirectional dijk, test = 2000 mu is 39, query is 74000, and it took 2.165 seconds
+
+
+for regular dijk, test = 2050, mu is 46, query is 4202500, and it took 2.764 seconds
+for improved dijk, test = 2050, mu is 46, query is 4190200, and it took 2.745 seconds
+for bidirectional dijk, test = 2050 mu is 46, query is 207050, and it took 2.484 seconds
+
+
+for regular dijk, test = 2100, mu is 37, query is 4410000, and it took 2.915 seconds
+for improved dijk, test = 2100, mu is 37, query is 2442300, and it took 2.038 seconds
+for bidirectional dijk, test = 2100 mu is 37, query is 77700, and it took 2.561 seconds
+
+
+for regular dijk, test = 2150, mu is 43, query is 4622500, and it took 3.107 seconds
+for improved dijk, test = 2150, mu is 43, query is 4478450, and it took 2.953 seconds
+for bidirectional dijk, test = 2150 mu is 43, query is 182750, and it took 3.21 seconds
+
+
+for regular dijk, test = 2200, mu is 40, query is 4840000, and it took 3.257 seconds
+for improved dijk, test = 2200, mu is 40, query is 4270200, and it took 2.898 seconds
+for bidirectional dijk, test = 2200 mu is 40, query is 114400, and it took 3.559 seconds
+
+
+for regular dijk, test = 2250, mu is 44, query is 5062500, and it took 7.155 seconds
+for improved dijk, test = 2250, mu is 44, query is 5037750, and it took 5.595 seconds
+for bidirectional dijk, test = 2250 mu is 44, query is 175500, and it took 3.826 seconds
+
+
+for regular dijk, test = 2300, mu is 36, query is 5290000, and it took 3.822 seconds
+for improved dijk, test = 2300, mu is 36, query is 2895700, and it took 3.256 seconds
+for bidirectional dijk, test = 2300 mu is 36, query is 82800, and it took 3.251 seconds
+
+
+for regular dijk, test = 2350, mu is 21, query is 5522500, and it took 4.305 seconds
+for improved dijk, test = 2350, mu is 21, query is 141000, and it took 1.865 seconds
+for bidirectional dijk, test = 2350 mu is 21, query is 30550, and it took 3.911 seconds
+
+
+for regular dijk, test = 2400, mu is 44, query is 5760000, and it took 4.31 seconds
+for improved dijk, test = 2400, mu is 44, query is 5740800, and it took 4.303 seconds
+for bidirectional dijk, test = 2400 mu is 44, query is 252000, and it took 4.164 seconds
+
+
+for regular dijk, test = 2450, mu is 39, query is 6002500, and it took 4.373 seconds
+for improved dijk, test = 2450, mu is 39, query is 5421850, and it took 4.04 seconds
+for bidirectional dijk, test = 2450 mu is 39, query is 117600, and it took 3.847 seconds
+
+
+for regular dijk, test = 2500, mu is 27, query is 6250000, and it took 4.465 seconds
+for improved dijk, test = 2500, mu is 27, query is 567500, and it took 2.449 seconds
+for bidirectional dijk, test = 2500 mu is 27, query is 57500, and it took 3.936 seconds
+
+
+for regular dijk, test = 2550, mu is 34, query is 6502500, and it took 4.549 seconds
+for improved dijk, test = 2550, mu is 34, query is 3636300, and it took 3.342 seconds
+for bidirectional dijk, test = 2550 mu is 34, query is 130050, and it took 4.394 seconds
+
+
+for regular dijk, test = 2600, mu is 33, query is 6760000, and it took 4.94 seconds
+for improved dijk, test = 2600, mu is 33, query is 3328000, and it took 3.335 seconds
+for bidirectional dijk, test = 2600 mu is 33, query is 109200, and it took 4.666 seconds
+
+
+for regular dijk, test = 2650, mu is 44, query is 7022500, and it took 4.856 seconds
+for improved dijk, test = 2650, mu is 44, query is 6964200, and it took 4.785 seconds
+for bidirectional dijk, test = 2650 mu is 44, query is 278250, and it took 4.809 seconds
+
+
+for regular dijk, test = 2700, mu is 29, query is 7290000, and it took 5.01 seconds
+for improved dijk, test = 2700, mu is 29, query is 1136700, and it took 2.473 seconds
+for bidirectional dijk, test = 2700 mu is 29, query is 97200, and it took 5.022 seconds
+
+
+for regular dijk, test = 2750, mu is 27, query is 7562500, and it took 5.62 seconds
+for improved dijk, test = 2750, mu is 27, query is 759000, and it took 3.603 seconds
+for bidirectional dijk, test = 2750 mu is 27, query is 49500, and it took 4.665 seconds
+
+
+for regular dijk, test = 2800, mu is 35, query is 7840000, and it took 5.873 seconds
+for improved dijk, test = 2800, mu is 35, query is 4401600, and it took 4.301 seconds
+for bidirectional dijk, test = 2800 mu is 35, query is 126000, and it took 5.632 seconds
+
+
+for regular dijk, test = 2850, mu is 40, query is 8122500, and it took 5.93 seconds
+for improved dijk, test = 2850, mu is 40, query is 7555350, and it took 5.914 seconds
+for bidirectional dijk, test = 2850 mu is 40, query is 142500, and it took 5.259 seconds
+
+
+for regular dijk, test = 2900, mu is 36, query is 8410000, and it took 5.929 seconds
+for improved dijk, test = 2900, mu is 36, query is 5794200, and it took 4.523 seconds
+for bidirectional dijk, test = 2900 mu is 36, query is 182700, and it took 5.605 seconds
+
+
+for regular dijk, test = 2950, mu is 38, query is 8702500, and it took 5.894 seconds
+for improved dijk, test = 2950, mu is 38, query is 7395650, and it took 5.18 seconds
+for bidirectional dijk, test = 2950 mu is 38, query is 144550, and it took 5.911 seconds
+
+
+for regular dijk, test = 3000, mu is 35, query is 9000000, and it took 6.446 seconds
+for improved dijk, test = 3000, mu is 35, query is 5691000, and it took 4.448 seconds
+for bidirectional dijk, test = 3000 mu is 35, query is 141000, and it took 5.75 seconds
+
+
+for regular dijk, test = 3050, mu is 24, query is 9302500, and it took 6.168 seconds
+for improved dijk, test = 3050, mu is 24, query is 628300, and it took 3.071 seconds
+for bidirectional dijk, test = 3050 mu is 24, query is 57950, and it took 5.609 seconds
+
+
+for regular dijk, test = 3100, mu is 34, query is 9610000, and it took 6.332 seconds
+for improved dijk, test = 3100, mu is 34, query is 5499400, and it took 5.435 seconds
+for bidirectional dijk, test = 3100 mu is 34, query is 167400, and it took 5.729 seconds
+
+
+for regular dijk, test = 3150, mu is 37, query is 9922500, and it took 7.862 seconds
+for improved dijk, test = 3150, mu is 37, query is 7985250, and it took 6.179 seconds
+for bidirectional dijk, test = 3150 mu is 37, query is 170100, and it took 7.21 seconds
+
+
+for regular dijk, test = 3200, mu is 37, query is 10240000, and it took 7.579 seconds
+for improved dijk, test = 3200, mu is 37, query is 9011200, and it took 6.522 seconds
+for bidirectional dijk, test = 3200 mu is 37, query is 220800, and it took 9.902 seconds
+
+
+for regular dijk, test = 3250, mu is 33, query is 10562500, and it took 7.418 seconds
+for improved dijk, test = 3250, mu is 33, query is 4381000, and it took 5.755 seconds
+for bidirectional dijk, test = 3250 mu is 33, query is 149500, and it took 9.057 seconds
+
+
+for regular dijk, test = 3300, mu is 38, query is 10890000, and it took 7.511 seconds
+for improved dijk, test = 3300, mu is 38, query is 10220100, and it took 9.868 seconds
+for bidirectional dijk, test = 3300 mu is 38, query is 201300, and it took 8.385 seconds
+
+
+for regular dijk, test = 3350, mu is 33, query is 11222500, and it took 7.415 seconds
+for improved dijk, test = 3350, mu is 33, query is 4686650, and it took 5.434 seconds
+for bidirectional dijk, test = 3350 mu is 33, query is 184250, and it took 6.735 seconds
+
+
+for regular dijk, test = 3400, mu is 27, query is 11560000, and it took 8.143 seconds
+for improved dijk, test = 3400, mu is 27, query is 2074000, and it took 3.919 seconds
+for bidirectional dijk, test = 3400 mu is 27, query is 98600, and it took 7.709 seconds
+
+
+for regular dijk, test = 3450, mu is 27, query is 11902500, and it took 7.806 seconds
+for improved dijk, test = 3450, mu is 27, query is 1621500, and it took 3.986 seconds
+for bidirectional dijk, test = 3450 mu is 27, query is 110400, and it took 7.61 seconds
+
+
+for regular dijk, test = 3500, mu is 26, query is 12250000, and it took 8.338 seconds
+for improved dijk, test = 3500, mu is 26, query is 1267000, and it took 4.273 seconds
+for bidirectional dijk, test = 3500 mu is 26, query is 119000, and it took 8.188 seconds
+
+
+for regular dijk, test = 3550, mu is 40, query is 12602500, and it took 10.013 seconds
+for improved dijk, test = 3550, mu is 40, query is 11938650, and it took 9.477 seconds
+for bidirectional dijk, test = 3550 mu is 40, query is 284000, and it took 10.242 seconds
+
+
+for regular dijk, test = 3600, mu is 36, query is 12960000, and it took 10.414 seconds
+for improved dijk, test = 3600, mu is 36, query is 11250000, and it took 8.378 seconds
+for bidirectional dijk, test = 3600 mu is 36, query is 230400, and it took 15.548 seconds
+
+
+for regular dijk, test = 3650, mu is 31, query is 13322500, and it took 11.205 seconds
+for improved dijk, test = 3650, mu is 31, query is 5478650, and it took 6.99 seconds
+for bidirectional dijk, test = 3650 mu is 31, query is 171550, and it took 12.783 seconds
+
+
+for regular dijk, test = 3700, mu is 30, query is 13690000, and it took 10.613 seconds
+for improved dijk, test = 3700, mu is 30, query is 3859100, and it took 5.436 seconds
+for bidirectional dijk, test = 3700 mu is 30, query is 151700, and it took 10.129 seconds
+
+
+for regular dijk, test = 3750, mu is 29, query is 14062500, and it took 10.105 seconds
+for improved dijk, test = 3750, mu is 29, query is 2891250, and it took 5.71 seconds
+for bidirectional dijk, test = 3750 mu is 29, query is 127500, and it took 12.658 seconds
+
+
+for regular dijk, test = 3800, mu is 32, query is 14440000, and it took 12.812 seconds
+for improved dijk, test = 3800, mu is 32, query is 6486600, and it took 7.731 seconds
+for bidirectional dijk, test = 3800 mu is 32, query is 231800, and it took 13.608 seconds
+
+
+for regular dijk, test = 3850, mu is 32, query is 14822500, and it took 11.428 seconds
+for improved dijk, test = 3850, mu is 32, query is 5632550, and it took 6.472 seconds
+for bidirectional dijk, test = 3850 mu is 32, query is 196350, and it took 13.813 seconds
+
+
+for regular dijk, test = 3900, mu is 35, query is 15210000, and it took 10.39 seconds
+for improved dijk, test = 3900, mu is 35, query is 12160200, and it took 10.528 seconds
+for bidirectional dijk, test = 3900 mu is 35, query is 273000, and it took 16.383 seconds
+
+
+for regular dijk, test = 3950, mu is 32, query is 15602500, and it took 11.422 seconds
+for improved dijk, test = 3950, mu is 32, query is 7169250, and it took 6.898 seconds
+for bidirectional dijk, test = 3950 mu is 32, query is 201450, and it took 13.644 seconds
+
+
+for regular dijk, test = 4000, mu is 22, query is 16000000, and it took 12.395 seconds
+for improved dijk, test = 4000, mu is 22, query is 496000, and it took 4.634 seconds
+for bidirectional dijk, test = 4000 mu is 22, query is 60000, and it took 11.548 seconds
+
+
+for regular dijk, test = 4050, mu is 38, query is 16402500, and it took 12.103 seconds
+for improved dijk, test = 4050, mu is 38, query is 15009300, and it took 11.632 seconds
+for bidirectional dijk, test = 4050 mu is 38, query is 255150, and it took 12.048 seconds
+
+
+for regular dijk, test = 4100, mu is 35, query is 16810000, and it took 11.649 seconds
+for improved dijk, test = 4100, mu is 35, query is 13808800, and it took 11.021 seconds
+for bidirectional dijk, test = 4100 mu is 35, query is 282900, and it took 17.328 seconds
+
+
+for regular dijk, test = 4150, mu is 30, query is 17222500, and it took 12.701 seconds
+for improved dijk, test = 4150, mu is 30, query is 3996450, and it took 9.644 seconds
+for bidirectional dijk, test = 4150 mu is 30, query is 174300, and it took 34.541 seconds
+
+
+for regular dijk, test = 4200, mu is 23, query is 17640000, and it took 12.015 seconds
+for improved dijk, test = 4200, mu is 23, query is 966000, and it took 5.282 seconds
+for bidirectional dijk, test = 4200 mu is 23, query is 75600, and it took 16.776 seconds
+
+
+for regular dijk, test = 4250, mu is 33, query is 18062500, and it took 15.726 seconds
+for improved dijk, test = 4250, mu is 33, query is 8797500, and it took 8.671 seconds
+for bidirectional dijk, test = 4250 mu is 33, query is 208250, and it took 19.343 seconds
+
+
+for regular dijk, test = 4300, mu is 29, query is 18490000, and it took 18.662 seconds
+for improved dijk, test = 4300, mu is 29, query is 4949300, and it took 7.583 seconds
+for bidirectional dijk, test = 4300 mu is 29, query is 163400, and it took 23.175 seconds
+
+
+for regular dijk, test = 4350, mu is 29, query is 18922500, and it took 15.74 seconds
+for improved dijk, test = 4350, mu is 29, query is 3580050, and it took 7.017 seconds
+for bidirectional dijk, test = 4350 mu is 29, query is 169650, and it took 23.403 seconds
+
+
+for regular dijk, test = 4400, mu is 34, query is 19360000, and it took 18.977 seconds
+for improved dijk, test = 4400, mu is 34, query is 13780800, and it took 11.08 seconds
+for bidirectional dijk, test = 4400 mu is 34, query is 352000, and it took 21.708 seconds
+
+
+for regular dijk, test = 4450, mu is 32, query is 19802500, and it took 22.088 seconds
+for improved dijk, test = 4450, mu is 32, query is 10902500, and it took 16.391 seconds
+for bidirectional dijk, test = 4450 mu is 32, query is 284800, and it took 53.486 seconds
+
+
+for regular dijk, test = 4500, mu is 33, query is 20250000, and it took 14.921 seconds
+for improved dijk, test = 4500, mu is 33, query is 10161000, and it took 24.731 seconds
+for bidirectional dijk, test = 4500 mu is 33, query is 283500, and it took 67.127 seconds
+
+
+for regular dijk, test = 4550, mu is 35, query is 20702500, and it took 21.372 seconds
+for improved dijk, test = 4550, mu is 35, query is 14687400, and it took 31.13 seconds
+for bidirectional dijk, test = 4550 mu is 35, query is 313950, and it took 64.313 seconds
+
+
+for regular dijk, test = 4600, mu is 34, query is 21160000, and it took 26.556 seconds
+for improved dijk, test = 4600, mu is 34, query is 17328200, and it took 64.671 seconds
+for bidirectional dijk, test = 4600 mu is 34, query is 469200, and it took 150.885 seconds
+
+
+for regular dijk, test = 4650, mu is 32, query is 21622500, and it took 19.301 seconds
+for improved dijk, test = 4650, mu is 32, query is 10969350, and it took 45.67 seconds
+for bidirectional dijk, test = 4650 mu is 32, query is 265050, and it took 77.007 seconds
+
+
+for regular dijk, test = 4700, mu is 25, query is 22090000, and it took 16.998 seconds
+for improved dijk, test = 4700, mu is 25, query is 3445100, and it took 25.038 seconds
+for bidirectional dijk, test = 4700 mu is 25, query is 188000, and it took 104.306 seconds
+
+
+for regular dijk, test = 4750, mu is 33, query is 22562500, and it took 66.213 seconds
+for improved dijk, test = 4750, mu is 33, query is 13485250, and it took 18.479 seconds
+for bidirectional dijk, test = 4750 mu is 33, query is 304000, and it took 75.314 seconds
+
+
+for regular dijk, test = 4800, mu is 33, query is 23040000, and it took 64.171 seconds
+for improved dijk, test = 4800, mu is 33, query is 15571200, and it took 17.487 seconds
+for bidirectional dijk, test = 4800 mu is 33, query is 398400, and it took 153.056 seconds
+
+
+for regular dijk, test = 4850, mu is 35, query is 23522500, and it took 20.195 seconds
+for improved dijk, test = 4850, mu is 35, query is 21810450, and it took 96.751 seconds
+for bidirectional dijk, test = 4850 mu is 35, query is 354050, and it took 219.556 seconds
+
+
+for regular dijk, test = 4900, mu is 34, query is 24010000, and it took 23.924 seconds
+for improved dijk, test = 4900, mu is 34, query is 17527300, and it took 63.427 seconds
+for bidirectional dijk, test = 4900 mu is 34, query is 367500, and it took 143.194 seconds
+
+
+for regular dijk, test = 4950, mu is 33, query is 24502500, and it took 88.202 seconds
+for improved dijk, test = 4950, mu is 33, query is 14147100, and it took 22.014 seconds
+for bidirectional dijk, test = 4950 mu is 33, query is 311850, and it took 110.046 seconds
+
+
+for regular dijk, test = 5000, mu is 31, query is 25000000, and it took 63.773 seconds
+for improved dijk, test = 5000, mu is 31, query is 10540000, and it took 58.034 seconds
+for bidirectional dijk, test = 5000 mu is 31, query is 310000, and it took 142.126 seconds
