@@ -20,6 +20,8 @@ I implemented the algorithm by relaxing all edges for my current vertex in the f
 
 ## Graphs
 Here are graphs that show the comparison of Bidirectional Dijkstra, regular Dijkstra, and an improved Dijkstra.
-![Query](https://raw.githubusercontent.com/YahavMarom/shortest-st/refs/heads/main/Graph/query.png)
-![Time](https://raw.githubusercontent.com/YahavMarom/shortest-st/refs/heads/main/Graph/time.png)
+![query](https://github.com/user-attachments/assets/5d1078c6-5741-4bdf-be84-99c299ca6451)
+![time](https://github.com/user-attachments/assets/9ff14d60-462f-42da-8d6f-43955b999ecb)
+
+
 
