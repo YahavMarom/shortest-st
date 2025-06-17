@@ -22,7 +22,7 @@ I choose, for cliques of large sizes with weights randomly chosen in [10, 1000],
 
 It seems that, in terms of query complexity, Bidirectional Dijkstra is significantly better than the other two. In terms of time complexity, it appears it performs much worse. That's most likely because of the two heaps and needing to perform more code operations. 
 
-Improved Dijkstra fluctuates a lot, as you will see. For the time complexity, that's most likely because of the if-statement, since on large graphs, doing that lots of times adds up. For queries - I'm not entirely sure.
+Improved Dijkstra fluctuates a lot, as you will see. For the time complexity, that's most likely because of the if-statement, since on large graphs, doing that lots of times adds up. For queries, I'm not entirely sure.
 (Will add later on graphs comparing the unweighted case/A*)
 
 ![query_dijkstra](https://github.com/user-attachments/assets/becc96e6-6487-4082-abf7-9253fa19fd22)
