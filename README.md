@@ -18,15 +18,15 @@ In the paper, the implementation is a bit different - We relax an edge from our 
 I implemented the algorithm by relaxing all edges for my current vertex in the forward run and then relaxing all edges in the backward run. Notice that up until we find the actual shortest path, we relax all edges from a vertex; it is just the last two vertices, in the forward and backward runs, where we might not relax all their edges. However, on huge graphs, that's pretty negligible in terms of query/time complexity. 
 
 ## Graphs
-I choose, for cliques of large sizes with weights randomly chosen in [10, 1000], for the source to be the |size|/3-th vertex, target to be the |size|*2/3-th vertex.
+For the weighted case, I choose graphs to be cliques of large sizes with weights randomly chosen in [10, 1000], for the source to be the |size|/3-th vertex, target to be the |size|*2/3-th vertex.
+For the unweighted case, I chose s, t randomly from the graph. I made sure the graph was connected, and has an option to plug in how many edges there must be).
+All images/logs are in the Results folder.
 
 It seems that, in terms of query complexity, Bidirectional Dijkstra is significantly better than the other two. In terms of time complexity, it appears it performs much worse. That's most likely because of the two heaps and needing to perform more code operations. 
 
 Improved Dijkstra fluctuates a lot, as you will see. For the time complexity, that's most likely because of the if-statement, since on large graphs, doing that lots of times adds up. For queries, I'm not entirely sure.
-(Will add later on graphs comparing the unweighted case/A*)
 
-![query_dijkstra](https://github.com/user-attachments/assets/becc96e6-6487-4082-abf7-9253fa19fd22)
-![time_dijkstra](https://github.com/user-attachments/assets/e7ed0c0a-57b6-4516-abc6-5681a6ce885a)
+For BFS, bidirectional was better most of the time. 
 
 
 
