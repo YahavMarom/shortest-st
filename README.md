@@ -1,4 +1,4 @@
-# Bidirectional Dijkstra
+# Bidirectional Dijkstra, BFS
 
 ## Description
 I read an article that explained the bidirectional approach of computing the shortest s-t path in graphs.
