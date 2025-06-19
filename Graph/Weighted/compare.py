@@ -1,37 +1,13 @@
 import bidirectional_dijkstra
 import dijkstra
-import improved_dijk as improved
+import improved_dijkstra as improved
 import random
 import time
 import matplotlib.pyplot as plt
-import numpy as np
+
 random.seed(42)
 
 
-
-
-def undirected_random_graph_generator(n):
-    graph = {i: {} for i in range(n)}
-    for i in range(n):
-        for j in range(i+1,n):
-            if i != j:
-                graph[i][j] = random.randint(10, 1000)
-                graph[j][i] = graph[i][j]
-                
-    return graph
-
-
-
-#directed
-
-def directed_random_graph_generator(n):
-    graph = {i: {} for i in range(n)}
-    for i in range(n):
-        for j in range(n):
-            if i != j:
-                graph[i][j] = random.randint(10, 1000)
-                
-    return graph
 
 def compare(tests, undirected):
     
@@ -49,11 +25,12 @@ def compare(tests, undirected):
 
     for test in tests:
         if undirected:
-            r_graph = undirected_random_graph_generator(test)
+            r_graph = bidirectional_dijkstra.random_undirected_graph_generator(test)
         else: 
-            r_graph = directed_random_graph_generator(test)
+            r_graph = bidirectional_dijkstra.random_directed_graph_generator(test)
         
-        s, t = round(test / 3), round (test * 2 / 3)
+        s, t = random.sample(range(test), 2)
+        
 
         start = time.time()
         dijk_query, dijk_mu = dijkstra.dijkstra(r_graph, s, t)
@@ -78,38 +55,75 @@ def compare(tests, undirected):
         print(f"for bidirectional dijk, test = {test} mu is {mu}, query is {query}, and it took {time3} seconds")
         bd_dijk_time.append(time3)
         bd_dijk_queries.append(query)
+
+        if dijk_mu != mu:
+            break
         print("\n")
     return dijk_time, dijk_queries, improv_time, improv_queries, bd_dijk_time, bd_dijk_queries
 
 
 if __name__ == "__main__":
-    x = [50 * i for i in range(1, 2)] 
-    dijk_time, dijk_queries, improv_time, improv_queries, bd_dijk_time, bd_dijk_queries = compare(x, True)
-    
+    x = [i for i in range(20, 500, 50)]
+    table = [True, False]
+    for val in table:
+            
+        undirected = val
+        dijk_time, dijk_queries, improv_time, improv_queries, bd_dijk_time, bd_dijk_queries = compare(x, undirected)
+        
 
 
-    toggle = 1
-    if toggle:
-        fig, time_plot = plt.subplots(figsize=(6, 4), layout='constrained')
-        time_plot.plot(x, dijk_time, label='Dijkstra')
-        time_plot.plot(x, improv_time, label='Improved Dijkstra')
-        time_plot.plot(x, bd_dijk_time, label='Bidirectional Dijkstra')
-        time_plot.set_xlabel('Size of Clique')
-        time_plot.set_ylabel('Time (s)')
-        time_plot.set_title("Time vs Clique Size (Undirected, Weighted)")
-        time_plot.legend()
+        toggle = 1
 
-        # query plot
-        fig, query_plot = plt.subplots(figsize=(6, 4), layout='constrained')
-        query_plot.plot(x, dijk_queries, label='Dijkstra')
-        query_plot.plot(x, improv_queries, label='Improved Dijkstra')
-        query_plot.plot(x, bd_dijk_queries, label='Bidirectional Dijkstra')
-        query_plot.set_xlabel('Size of Clique')
-        query_plot.set_ylabel('Number of Queries')
-        query_plot.set_title("Queries vs Clique Size (Undirected, Weighted)")
-        query_plot.legend()
+        if toggle:
+            if undirected:
+                fig, time_plot = plt.subplots(figsize=(6, 4), layout='constrained')
+                time_plot.scatter(x, dijk_time, label='Dijkstra')
+                time_plot.scatter(x, improv_time, label='Improved Dijkstra')
+                time_plot.scatter(x, bd_dijk_time, label='Bidirectional Dijkstra')
+                time_plot.set_xlabel('Size of Graph')
+                time_plot.set_ylabel('Time (s)')
+                time_plot.set_title("Time vs Graph Size (Undirected, Weighted)")
+                time_plot.legend()
 
-        plt.show()
+                # query plot
+                fig, query_plot = plt.subplots(figsize=(6, 4), layout='constrained')
+                query_plot.scatter(x, dijk_queries, label='Dijkstra')
+                query_plot.scatter(x, improv_queries, label='Improved Dijkstra')
+                query_plot.scatter(x, bd_dijk_queries, label='Bidirectional Dijkstra')
+                query_plot.set_xlabel('Size of Graph')
+                query_plot.set_ylabel('Number of Queries')
+                query_plot.set_title("Queries vs Graph size (Undirected, Weighted)")
+                query_plot.legend()
+
+                plt.show()
+
+
+
+            else: #directed
+                fig, time_plot = plt.subplots(figsize=(6, 4), layout='constrained')
+                time_plot.scatter(x, dijk_time, label='Dijkstra')
+                time_plot.scatter(x, improv_time, label='Improved Dijkstra')
+                time_plot.scatter(x, bd_dijk_time, label='Bidirectional Dijkstra')
+                time_plot.set_xlabel('Size of Graph')
+                time_plot.set_ylabel('Time (s)')
+                time_plot.set_title("Time vs Graph Size (Directed, Weighted)")
+                time_plot.legend()
+
+                # query plot
+                fig, query_plot = plt.subplots(figsize=(6, 4), layout='constrained')
+                query_plot.scatter(x, dijk_queries, label='Dijkstra')
+                query_plot.scatter(x, improv_queries, label='Improved Dijkstra')
+                query_plot.scatter(x, bd_dijk_queries, label='Bidirectional Dijkstra')
+                query_plot.set_xlabel('Size of Graph')
+                query_plot.set_ylabel('Number of Queries')
+                query_plot.set_title("Queries vs Graph size (Directed, Weighted)")
+                query_plot.legend()
+
+                plt.show()
+            
+
+                
+
 
 
 

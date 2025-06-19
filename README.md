@@ -10,6 +10,7 @@ It seemed interesting, so I programmed it in Python.
 
 ## The Algorithm
 We are given a graph in an adjacency list representation, and we're also given query access to it: using the degree(u) function, which returns the degree of vertex u, and using neighbor(u, i), which returns the i-th edge of vertex u.
+(For the directed case, we must have an inneighbor/outneighbor.)
 
 Given a source vertex and a target vertex, we're asked to find the shortest s-t path. The main measure of complexity will be query complexity.
 
@@ -17,18 +18,23 @@ In the paper, the implementation is a bit different - We relax an edge from our 
 
 I implemented the algorithm by relaxing all edges for my current vertex in the forward run and then relaxing all edges in the backward run. Notice that up until we find the actual shortest path, we relax all edges from a vertex; it is just the last two vertices, in the forward and backward runs, where we might not relax all their edges. However, on huge graphs, that's pretty negligible in terms of query/time complexity. 
 
-## Graphs
-For the weighted case, I choose graphs to be cliques of large sizes with weights randomly chosen in [10, 1000], for the source to be the |size|/3-th vertex, target to be the |size|*2/3-th vertex.
-For the unweighted case, I chose s, t randomly from the graph. I made sure the graph was connected, and has an option to plug in how many edges there must be).
-All images/logs are in the Results folder.
+## Results
+For the weighted case, I choose weights randomly chosen in [10, 500], and chose s, t randomly. I 
+For the unweighted case, I made a connected graph, and had the option of adding a parameter "k" - larger k means, mostly, more edges for each vertex. Chose s,t randomly again.
 
-It seems that, in terms of query complexity, Bidirectional Dijkstra is significantly better than the other two. In terms of time complexity, it appears it performs much worse. That's most likely because of the two heaps and needing to perform more code operations. 
 
-Improved Dijkstra fluctuates a lot, as you will see. For the time complexity, that's most likely because of the if-statement, since on large graphs, doing that lots of times adds up. For queries, I'm not entirely sure.
+### Dijkstra
+In graphs where each vertex has at most 40 edges (outgoing + ingoing), Bidirectional Dijkstra was much better in terms of query complexity, and was similar to the other two in terms of time performance.
 
-For BFS, bidirectional was better most of the time for smaller graphs (<50000) and worse on huge (~250000) graphs, but not by a lot. 
+On cliques, it had performed much worse than the other two - probably because of the two heaps (When choosing s be the (n/3)th vertex, and t (2n/3)th vertex. )
 
-You images are in the respective folders.
+### BFS
+For BFS, the bidirectional approach was better as well in terms of query complexity, and its time performance was similar to the regular approach.
+
+
+These suggest that on sparse graphs, the bidirectional approach can be a suitable alternative to the regular approach (well, A* still outperforms it, for weighted graphs).
+
+The images are in the respective folders.
 
 
 

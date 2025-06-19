@@ -6,13 +6,16 @@ random.seed(42)
 
 class RunBFS:
     def __init__(self, Graph, source):
-        # Convert graph to adjacency list format
-        self.graph = {}
-        for u, nbrs in Graph.items():
-            if isinstance(nbrs, dict):  
-                self.graph[u] = list(nbrs.keys())
+        if isinstance(Graph, dict) and 'outneighbors' in Graph:
+            self.graph = Graph['outneighbors']
+        else:
+            
+            if isinstance(Graph, dict) and 'inneighbors' in Graph:
+                
+                self.graph = {u: sorted(set(Graph['outneighbors'][u]) | set(Graph['inneighbors'][u]))
+                              for u in Graph['outneighbors']}
             else:
-                self.graph[u] = nbrs
+                self.graph = {u: list(nbrs) for u, nbrs in Graph.items()}
 
         # Ensure all vertices exist in the graph
         all_vertices = set(self.graph.keys())
@@ -40,8 +43,7 @@ class RunBFS:
             u = self.queue.popleft()
 
             if u == target:
-                path = construct_path(self.prev, source, target)
-                return self.dist[u], self.query_cnt, path
+                return self.dist[u], self.query_cnt, 0
 
             # Explore neighbors
             deg = self.degree(u)
@@ -53,7 +55,6 @@ class RunBFS:
                     self.prev[v] = u
                     self.dist[v] = self.dist[u] + 1
 
-        return float('inf'), self.query_cnt, self.prev  # No path found
 
 
 def random_directed_unweighted_graph(n, k):

@@ -2,12 +2,19 @@ import heapq
 
 class RunDijkstra:
     def __init__(self, Graph, source):
+        # Use only outgoing neighbors
+        if isinstance(Graph, dict) and 'outneighbors' in Graph:
+            raw_graph = Graph['outneighbors']
+        else:
+            raw_graph = Graph
+
+        # Convert dict values to list of (v, weight) tuples
         self.graph = {}
-        for u, nbrs in Graph.items():
+        for u, nbrs in raw_graph.items():
             if isinstance(nbrs, dict):
                 self.graph[u] = list(nbrs.items())
             else:
-                self.graph[u] = nbrs
+                self.graph[u] = nbrs  # Already a list of (v, weight)
 
         all_vertices = set(self.graph.keys())
         for nbr_list in self.graph.values():
@@ -34,7 +41,7 @@ class RunDijkstra:
         return self.query_cnt
 
 
-def dijkstra(Graph, source, target, undirected=True):
+def dijkstra(Graph, source, target):
     fwd_run = RunDijkstra(Graph, source)
 
     while fwd_run.heap:
@@ -43,10 +50,8 @@ def dijkstra(Graph, source, target, undirected=True):
             continue
         fwd_run.closed.add(curr_vertex)
 
-        
-        if curr_dist > fwd_run.distances[target]:      # instance optimal, once closing a vertex farther than t.
+        if curr_dist > fwd_run.distances[target]:
             break
-
         for j in range(fwd_run.degree(curr_vertex)):
             v, weight = fwd_run.neighbor(curr_vertex, j)
             new_dist = curr_dist + weight
@@ -55,18 +60,4 @@ def dijkstra(Graph, source, target, undirected=True):
                 fwd_run.prev[v]      = curr_vertex
                 heapq.heappush(fwd_run.heap, (new_dist, v))
 
-    # reconstruct path 
-    #path = []
-    #node = target
-    #while node is not None:
-    #    path.insert(0, node)
-    #    node = fwd_run.prev[node]
-
     return fwd_run.query_cnt, fwd_run.distances[target]
-
-        
-
-
-
-
-
