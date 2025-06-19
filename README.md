@@ -26,7 +26,9 @@ It seems that, in terms of query complexity, Bidirectional Dijkstra is significa
 
 Improved Dijkstra fluctuates a lot, as you will see. For the time complexity, that's most likely because of the if-statement, since on large graphs, doing that lots of times adds up. For queries, I'm not entirely sure.
 
-For BFS, bidirectional was better most of the time. 
+For BFS, bidirectional was better most of the time for smaller graphs (<50000) and worse on huge (~250000) graphs, but not by a lot. 
+
+You images are in the respective folders.
 
 
 
